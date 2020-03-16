@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>windnauts新歓</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(function(){
+                
+                $('a[href^="#"]').click(function() {
+                    var speed = 400;
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $('body,html').animate({scrollTop:position}, speed, 'swing');
+                    return false;
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="navigation">
+                <ul id="navi">
+                    <li class="item"><a href="#about">windnautsとは</a></li>
+                    <li class="item"><a href="#team">班紹介</a></li>
+                    <li class="item"><a href="#schedule">1年の流れ</a></li>
+                    <li class="item"><a href="#why">どうしてYouはwindnautsに？</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="main">
+            <div id="welcome">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="yokoso">
+                            <img src="images/top/top.jpg" alt="TOP_IMAGE">
+                            <h1 class="message">Welcome to<br>Windnauts</h1>
+                        </div>
+                        <div class="swiper-slide" id="about_team">
+                            <img src="images/top/sagyou.jpg" id="sagyou" alt="ASIDE_IMAGE">
+                            <h1 class="message">班活動について</h1>
+                        </div>
+                        <div class="swiper-slide" id="about_event">
+                            <img src="images/top/gakusai.jpg" id="gakusai" alt="ROT_IMAGE">
+                            <h1 class="message">行事・イベント</h1>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+
+            <div id="about" class="contents">
+                <!--
+                <div class="img1">
+                    <img src="/example1.jpg" alt="eg">
+                </div>-->
+                <div class="text">
+                    <h2><a href="about.html">windnautsとは？</a></h2>
+                    <p>「なんかテレビでやってた気がする」「あ〜、あの超熱いパイロットね」などなど様々な印象を持っている方が多いと思います。<br>いずれにせよ、ちょっとだけでもまず私たちのことを知って下さい。</p>
+                </div>
+            </div>
+            
+            <div id="team" class="contents">
+                <div class="text">
+                    <h2><a href="team.html">班紹介</a></h2>
+                    <p>人力とはいえ人が乗る飛行機を造っているのですから、やはり分担しないと完成できません。<br>一体どのような班があってどのようなものを造っているのでしょうか。</p>
+                </div>
+                <div class="img2">
+                    <img src="images/avionics.jpg" alt="eg">
+                </div>
+            </div>
+            
+            <div id="schedule" class="contents">
+                <div class="img1">
+                    <img src="images/example1.jpg" alt="eg">
+                </div>
+                <div class="text">
+                    <h2><a href="schedule.html">1年の流れ</a></h2>
+                    <p>鳥人間コンテストは毎年の夏に必ずやってきます。そのためきちんと製作スケジュールがあります。<br>息抜きの恒例行事も合わせて見てみましょう。</p>
+                </div>
+            </div>
+            
+            <div id="why" class="contents">
+                <div class="text">
+                    <h2><a href="why.html">どうしてYouはwindnautsに？</a></h2>
+                    <p>windnautsには確かに工学部・機械系の人が多いですが、そうでない人も少なくありません。<br>彼らがwindnautsに入った理由はなんなのでしょうか。</p>
+                </div>
+                <!--
+                <div class="img2">
+                    <img src="example1.jpg" alt="eg">
+                </div>-->
+            </div>
+        </div>
+        <footer>
+            <nav id="link">
+                <ul id="linklink">
+                    <li class="item"><a href="http://www.windnauts.sakura.ne.jp">メインページ</a></li>
+                    <li class="item"><a href="https://twitter.com/windnauts_2014">twitter</a></li>
+                    <li class="item"><a href="https://twitter.com/2020Windnauts">新歓twitter</a></li>
+                    <li class="item"><a href="https://www.youtube.com/user/windnauts/featured">youtube</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script type="text/javascript" src="fadein.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper ('.swiper-container', {
+                loop: true,
+                freeMode: true,
+                speed: 1000,
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: true
+                },
+            });
+        </script>
+    </body>
+</html>
