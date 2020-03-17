@@ -32,18 +32,12 @@
     </head>
 
     <body>
-        <header>
-            <nav id="navigation">
-                <ul id="navi">
-                    <li class="item"><a href="#about">windnautsとは</a></li>
-                    <li class="item"><a href="#team">班紹介</a></li>
-                    <li class="item"><a href="#schedule">1年の流れ</a></li>
-                    <li class="item"><a href="#why">どうしてYouはwindnautsに？</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div id="main">
+        <div id="loading" class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+        <div id="main"　class="hidden">
             <div id="welcome">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -63,7 +57,16 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
             </div>
-
+            <header>
+                <nav id="navigation">
+                    <ul id="navi">
+                        <li class="item"><a href="#about">windnautsとは</a></li>
+                        <li class="item"><a href="#team">班紹介</a></li>
+                        <li class="item"><a href="#schedule">1年の流れ</a></li>
+                        <li class="item"><a href="#why">どうしてYouはwindnautsに？</a></li>
+                    </ul>
+                </nav>
+            </header>
             <div id="about" class="contents">
                 <!--
                 <div class="img1">
@@ -117,6 +120,14 @@
             </nav>
         </footer>
 
+        <script>
+            var loading_img = document.getElementById('loading');
+            var main_contents = document.getElementById('main');
+            window.addEventListener('load',function(){
+                loading_img.style.display = 'none';
+                main_contents.classList.remove('hidden');
+            });
+        </script>
         <script type="text/javascript" src="fadein.js"></script>
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script>
