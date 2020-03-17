@@ -28,7 +28,7 @@ footer{
     margin-left: 30px;
 }
 
-#navi .item a{
+a{
     color: aliceblue;
     text-decoration: none;
 }
@@ -102,6 +102,7 @@ footer{
 
 .contents .text p{
     font-size: 90%;
+    letter-spacing: 0.2em;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -114,20 +115,33 @@ footer{
     text-decoration: none;
 }
 
-.contents .img1{
+.contents .text{
+    width: 70%;
+}
+.contents .show .img1{
     margin-left: 0%;
     margin-right: 10%;
     size: 150%;
 }
 
-.contents .img2{
-    margin-left: auto;
+.contents .show .img2{
+    margin-left: 0%;
     margin-right: 0%;
+    position: relative;
+    left: 20%;
     size: 150%;
 }
 
-.contents .img1 img, .contents .img2 img{
-    width: 500px;
+.contents .show .img1 img, .contents .img2 img{
+    width: 100%;
+}
+
+.contents button{
+    width: 20%;
+    height: 10%;
+    background-color: #000;
+    font-size: 200%;
+    margin-top: 10%;
 }
 
 #linklink{
