@@ -124,16 +124,14 @@
                 </ul>
             </nav>
         </footer>
-
         <script>
             var loading_img = document.getElementById('loading');
             var main_contents = document.getElementById('main');
             window.addEventListener('load',function(){
-                loading_img.style.display = 'none';
+                loading_img.classList.add('hidden');
                 main_contents.classList.remove('hidden');
             });
         </script>
-        
         <script type="text/javascript" src="fadein.js"></script>
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script>
