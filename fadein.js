@@ -1,3 +1,17 @@
+var images = ['images/wind.jpg','images/avionics.jpg','images/ski.jpg','images/aside.jpg']
+
+            window.onload = function(){
+// 画像プリロード
+
+                for (i = 0; i < images.length; i++){
+
+                var img = document.createElement('img');
+
+                img.src = images[i];
+
+                }
+            }
+
 function showElementAnimation() {
 
     var element = document.getElementsByClassName('contents');
