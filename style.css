@@ -90,7 +90,6 @@ a{
     width: 100%;
 }
 /********************/
-
 .contents{
     display: flex;
     width: 100%;
@@ -107,7 +106,7 @@ a{
     opacity: 1;
     visibility: visible;
     /*transform: translateY(0px);*/
-  }
+}
 
 .contents .text p{
     font-size: 90%;
@@ -141,6 +140,18 @@ a{
     position: absolute;
     top: 50%;
     left: 70%;
+}
+
+#team{
+    background-image: url(images/avionics.jpg);
+}
+
+#schedule{
+    background-image: url(images/ski.jpg);
+}
+
+#why{
+    background-image: url(images/aside.jpg);
 }
 
 #linklink{
