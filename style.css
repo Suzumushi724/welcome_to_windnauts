@@ -52,7 +52,7 @@ a{
     left: 50px;
 }
 .swiper-container{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
