@@ -19,6 +19,13 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(window).on('load',function(){
+                $('.loader').css('display','none');
+                $('#main').css('display','block');
+                console.log("done");
+            })
+        </script>
         <!--script>
             $(function(){
                 $('a[href^="#"]').click(function() {
@@ -113,25 +120,17 @@
                     <img src="example1.jpg" alt="eg">
                 </div>-->
             </div>
+            <footer>
+                <nav id="link">
+                    <ul id="linklink">
+                        <li class="item"><a href="http://www.windnauts.sakura.ne.jp">メインページ</a></li>
+                        <li class="item"><a href="https://twitter.com/windnauts_2014">twitter</a></li>
+                        <li class="item"><a href="https://twitter.com/2020Windnauts">新歓twitter</a></li>
+                        <li class="item"><a href="https://www.youtube.com/user/windnauts/featured">youtube</a></li>
+                    </ul>
+                </nav>
+            </footer>
         </div>
-        <footer>
-            <nav id="link">
-                <ul id="linklink">
-                    <li class="item"><a href="http://www.windnauts.sakura.ne.jp">メインページ</a></li>
-                    <li class="item"><a href="https://twitter.com/windnauts_2014">twitter</a></li>
-                    <li class="item"><a href="https://twitter.com/2020Windnauts">新歓twitter</a></li>
-                    <li class="item"><a href="https://www.youtube.com/user/windnauts/featured">youtube</a></li>
-                </ul>
-            </nav>
-        </footer>
-        <script>
-            var loading_img = document.getElementById('loading');
-            var main_contents = document.getElementById('main');
-            window.addEventListener('load',function(){
-                loading_img.classList.add('hidden');
-                main_contents.classList.remove('hidden');
-            });
-        </script>
         <script type="text/javascript" src="fadein.js"></script>
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script>

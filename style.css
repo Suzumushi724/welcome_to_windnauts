@@ -3,6 +3,7 @@ body{
     background-color: #000;
     color: white;
     font-family: 'Noto Serif JP', serif;
+    width: 100vw;
 }
 
 header{
@@ -38,13 +39,10 @@ a{
 
 /********************/
 #main{
-    width: 100vw;
+    width: 100%;
+    display: none;
 }
 
-.hidden{
-    opacity: 0;
-    visibility: hidden;
-}
 /*******************/
 
 /*******************/
@@ -168,6 +166,7 @@ a{
     height: 64px;
     border-radius: 50%;
     perspective: 800px;
+    display: block;
   }
   
   .inner {
