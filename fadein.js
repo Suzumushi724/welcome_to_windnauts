@@ -20,7 +20,7 @@ function showElementAnimation() {
         
         else if(WindowHeight < elemY) {
             element[i].classList.remove('show');
-        }        
+        }    
     }
 }
 showElementAnimation();

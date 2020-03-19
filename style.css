@@ -84,7 +84,7 @@ a{
 #about_event h1{
     font-size: 300%;
     margin-top: 550px;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 #gakusai,#sagyou{
     width: 100%;
@@ -170,6 +170,34 @@ a{
     text-decoration: none;
 }
 
+.slidecontents{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    transition: 2s;
+    transform: translate(-100%,0);}
+
+.slide{
+    display: block;
+    width: 80%;
+    height: 100vh;
+    transform: translate(0,0) !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slidecontents .text p{
+    font-size: 90%;
+    letter-spacing: 0.2em;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color:rgba(0, 0,0, 0.7);
+}
+
+.slidecontents .text h1{
+    width: auto;
+    background-color:rgba(0, 0,0, 0.7);
+}
+/********loading**********/
 .loader {
     position: absolute;
     top: calc(50% - 32px);
@@ -242,6 +270,10 @@ a{
         height: 100%;
         width: 100%;
     }
+
+    .item a{
+        font-size: 150%;
+    }
     #team{
         background-image: url(images/avionics.jpg);
         background-position: 50%;
@@ -270,6 +302,18 @@ a{
         background-color:rgba(0, 0,0, 0.7);
     }
 
+    .slidecontents .text h1{
+        font-size:300%;
+        width: auto;
+        background-color:rgba(0, 0,0, 0.7);
+        font-family: 'Noto Serif JP', serif;
+    }
+    
+    .slidecontents .text img{
+        width: 60%;
+    }
+    
+
     .contents button{
         width: 40%;
         height: 5%;
@@ -279,5 +323,19 @@ a{
         top: 80%;
         left: 50%;
         font-family: 'Noto Serif JP', serif;
+    }
+
+    .slidecontents .text p{
+        font-size: 190%;
+        letter-spacing: 0.2em;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color:rgba(0, 0,0, 0.7);
+    }
+    
+    .slidecontents .text h2{
+        font-size:500%;
+        width: auto;
+        background-color:rgba(0, 0,0, 0.7);
+        font-family: 'Noto Sans JP', sans-serif;
     }
 }
