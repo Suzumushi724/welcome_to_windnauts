@@ -55,7 +55,7 @@ a{
     left: 50px;
 }
 .swiper-container{
-    height: 100vh;
+    
     width: 100%;
 }
 
@@ -266,10 +266,6 @@ a{
   }
 
   @media screen and (orientation:portrait){
-    .swiper-container{
-        height: 100%;
-        width: 100%;
-    }
 
     .item a{
         font-size: 150%;
@@ -337,5 +333,9 @@ a{
         width: auto;
         background-color:rgba(0, 0,0, 0.7);
         font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    #main #title h1{
+        font-size: 300%;
     }
 }
