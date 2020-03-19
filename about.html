@@ -2,9 +2,111 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>windnautsについて</title>
+        <title>windnautsについて</title><link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(window).on('load',function(){
+                $('.loader').css('display','none');
+                $('#main').css('display','block');
+                console.log("done");
+            })
+        </script>
     </head>
     <body>
-        工事中
+        <div id="loading" class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+        <div id="main" >
+            <div id="title" style="height: 100vh; width: 100%; margin-top: auto; margin-bottom: auto; position: relative;">
+                <h1 style="font-family: 'Noto Serif JP', serif; text-align: center; position: absolute; top: 50%; font-size: 300%;">windnautsとは?</h1>
+            </div>
+            <div class="slidecontents" >
+                <div class="text">
+                    <img src="images/wind.jpg" alt="face" width="40%"> 
+                    <h1>windnautsの概要</h1>
+                    <p>windnautsは1993年の5月に3人の学部1年生によって設立された、今年度で27年目を迎える部です。毎年7月に琵琶湖で開催される読売テレビ主催の鳥人間コンテストに向けて日々機体製作を行っています。正式名称は「東北大学学友会人力飛行部」であり、正式な学友会体育部加盟団体となっています。<br>
+                    　"windnuts"とは造語であり、"wind"(風)と"nauts"(船乗り)の単語の組み合わせによって成り立っています。人力飛行機は風の行方にその飛行距離が大きく左右されます。"windnauts"という名前には「風の海を渡っていく」という願いが込められているのです。</p>
+                </div>
+            </div>
+            <div id="sakata" class="slidecontents" >
+                <div class="text">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>今年度の目標</h1>
+                    <p>2019年の第42回大会ではwindnautsが保持していた学生記録を日本大学に更新されてしまうという悔しい結果となりました。<br>
+                        そのため今年度の目標は<br><strong style="font-size: 300%;">「学生記録奪還」</strong><br>です。これは単に記録奪還を目指すものではなく、学生記録を打ち立てた過去のwindnautsを超えるということを意味しています。</p>
+                </div>
+            </div>
+            <div id="tanaka" class="slidecontents">
+                <div class="text">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>活動場所・時間</h1>
+                    <p style="size: 20%;">主な活動場所は川内課外活動共用施設Ａの端っこにある「作業場」と呼ばれる場所です。<a href="https://www.tohoku.ac.jp/map/ja/">(地図はココをクリック)</a><br>ただし内部には製作途中の機体があるため<strong style="font-size: 200%;">新入生の立ち入りは禁止となっている</strong>ので注意して下さい。<br>時間は放課後なら大体誰かしらはいますので、外を歩いている先輩に声をかけてみるといいかもしれません。</p>
+                </div>
+            </div>
+            <div class="slidecontents">
+                <div class="text" style="width: 100%;">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>windnautsの歴史</h1>
+                    <p>1993年 5月にたった3人の学部1年生に創立され、活動を始める。<br>
+
+                        1994年 第18回鳥人間コンテストへ滑空機として応募。書類審査で不合格となり出鼻をくじかれる。その後プロペラ機の製作を始める。<br>
+                        
+                        1995年 第19回鳥人間コンテストへ、プロペラ機1機、滑空機3機を応募して数で勝負したが、全機不合格。<br>
+                        
+                        1996年 第20回鳥人間コンテストへは、昨年の失敗を活かし、念入りに設計した滑空機を1機応募。しかし不合格に終わる。<br>
+                        
+                        1997年 【97政宗】第21回鳥人間コンテスト、書類選考において工夫を凝らし、滑空機で応募。4回目にして念願の書類審査合格を果たす。しかし、大会フライト当日、台風直撃により大会は全面中止。<br>
+                        
+                        1998年 【98政宗】第22回鳥人間コンテスト出場(滑空機) 　16.45m 17位(28機)<br>
+                        
+                        1999年 【99政宗】第23回大会　滑空機　書類審査不合格<br>
+                        【政宗・改　寒冷地仕様】人力プロペラ機　書類審査合格(OBチーム)<br>
+                        
+                        2000年 【First　Lady】第24回大会 人力プロペラ機　書類審査不合格<br>
+                        　　　　　女性パイロットでの自力離陸に成功(国内三例目) 113.248m<br>
+                        
+                        2001年　【風人】第25回大会 人力プロペラ機　書類審査合格　1709.50m 5位(16機)<br>
+                        
+                        2002年　【Windy】第26回大会 人力プロペラ機　書類審査合格　1290.79m 3位(17機)<br>
+                        
+                        2003年　【Migra】第27回大会 人力プロペラ機 審査書類合格　24823.01m　3位(18機) 琵琶湖対岸到達。<br>
+                        
+                        2004年　【勠】第28回大会　人力プロペラ機　書類審査合格　134.47m 台風のため競技不成立<br>
+                        
+                        2005年　【翔】第29回大会　人力プロペラ機　書類審査合格　140.10m 10位(20機)<br>
+                        
+                        2006年　【谺-echo-】第30回大会　人力プロペラ機ディスタンス部門　書類審査合格　28628.43m 1位(18機) 初優勝<br>
+                        
+                        2007年　【Sterna】第31回大会　人力プロペラ機ディスタンス部門　書類審査合格　3672.71m 2位(16機)<br>
+                        
+                        2008年　【來】第32回大会　人力プロペラ機ディスタンス部門出場　36000.00m 1位(13機)　大会史上初、琵琶湖の完全往復達成。当時、大会最長記録。<br>
+                        
+                        2009年　【Rera】鳥人間コンテスト開催中止のため、単独で記録飛行に挑戦　20720m(FAI公式記録)<br>
+                        
+                        2010年　【鸞】第33回大会　人力プロペラ機ディスタンス部門出場 11456.97m 2位(13機)　駆動系にドライブシャフトを初めて採用<br>
+                        
+                        2011年　【Riih】第34回大会　人力プロペラ機ディスタンス部門出場 18687.12m 1位(11機)　GPS等のトラブルで迷走。実質飛行距離は約35km。<br>
+                        
+                        2012年　【翠】第35回大会　人力プロペラ機ディスタンス部門出場　14129.34m 1位(11機)　 チーム史上最少最軽量　チーム初2連覇。<br>
+                        
+                        2013年　【Rey】第36回大会　人力プロペラ機ディスタンス部門出場　41.72m 9位(10機)　離陸時に中央翼破損。<br>
+                        
+                        2014年　【Rache】第37回大会　人力プロペラ機ディスタンス部門出場　1849.41m　強風のため競技不成立<br>
+                        
+                        2015年　【鴻】第38回大会　人力プロペラ機ディスタンス部門出場　35367.02m 1位(10機)　当時、歴代大会記録2位。”歴代最強”パイロット健闘のフライト。<br>
+                        
+                        2016年　【凛】第39回大会　人力プロペラ機ディスタンス部門出場　19669.59m 2位(12機)　最終番機にて晴天の中フライト。フライト時間は第39回出場機中最長。<br>
+                        
+                        2017年　【隼】第40回大会　人力プロペラ機ディスタンス部門出場　22657.79m　3位(15機)<br>
+                        
+                        2018年　【紬】第41回大会　人力プロペラ機ディスタンス部門出場　2347.58m(参考記録)　台風（ジョンダリ）接近のため競技不成立<br>
+                        2019年　【遥】第42回大会　人力プロペラ機ディスタンス部門出場　5438.19m 5位<</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="slide.js"></script>
     </body>
 </html>
