@@ -142,15 +142,15 @@ a{
 }
 
 #team{
-    background-image: url(images/avionics-min.jpg);
+    background-image: url(images//slides/avionics-min.jpg);
 }
 
 #schedule{
-    background-image: url(images/ski.jpg);
+    background-image: url(images/slides/ski.jpg);
 }
 
 #why{
-    background-image: url(images/aside-min.jpg);
+    background-image: url(images/slides/aside-min.jpg);
 }
 
 #linklink{
@@ -291,17 +291,17 @@ a{
         font-size: 150%;
     }
     #team{
-        background-image: url(images/avionics.jpg);
+        background-image: url(images/slides/avionics.jpg);
         background-position: 50%;
     }
 
     #schedule{
-        background-image: url(images/ski.jpg);
+        background-image: url(images/slides/ski.jpg);
         background-position: 45%;
     }
     
     #why{
-        background-image: url(images/aside-min.jpg);
+        background-image: url(images/slides/aside-min.jpg);
         background-position: 50%;
     }
 

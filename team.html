@@ -3,8 +3,94 @@
     <head>
         <meta charset="UTF-8">
         <title>班紹介</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(window).on('load',function(){
+                $('.loader').css('display','none');
+                $('#main').css('display','block');
+                console.log("done");
+            })
+        </script>
     </head>
     <body>
-        工事中
+        <div id="loading" class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+        <div id="main" >
+            <div id="title" style="height: 100vh; width: 100%; margin-top: auto; margin-bottom: auto; position: relative;">
+                <h1 style="font-family: 'Noto Serif JP', serif; text-align: center; position: absolute; top: 50%; font-size: 300%;">班紹介</h1>
+            </div>
+            <div class="contents">
+                <div class="bg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(images/team/kokupi.jpg); background-size: cover; opacity: 0.5;"></div>
+                <div class="text">
+                    <h1>コックピット班</h1>
+                    <p>コックピット班は、その名前の通り機体のコックピットを製作する班です。作業内容としては、切り出したカーボンプレートを部品の形にやする作業が多いです。また、コックピットはパイロットが乗る場所であり、サドルの位置などはパイロットに合わせて年ごとに変えています。<br>
+                        他班がそれぞれ時間をかけて作った大切な大切なパーツが取り付けられるコックピットは、縁の下の力持ちの様で魅力に感じています。</p>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="bg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(images/team/f.jpg); background-size: cover; opacity: 0.5;"></div>
+                <div class="text">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>フェアリング班</h1>
+                    <p>フェアリング班は、パイロットの乗っているコクピットの周りを覆う白い部分を作っています。その目的は、空気抵抗を減らすこと、パイロットが快適な環境で飛べるようにすることなどです。電熱線やカッター、やすりを使って発泡スチロールから形を作っています。</p>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="bg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(images/team/kudou.jpg); background-size: cover; opacity: 0.5;"></div>
+                <div class="text">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>駆動班</h1>
+                    <p style="size: 20%;">駆動班とはその名の通り、人力飛行機の駆動系統（すなわちパイロットの脚力をプロペラにつなぐ機構）を製作している班です。<br>Windnauts内では最も動的な部分を製作しており、時計の歯車のような頑丈で、精密で、複雑な部品を用意しなければならないので、駆動系統のパーツの大半はアルミ（超々ジュラルミン）を加工して、作られています。<br>班配属は夏以降で、まだまだ先の話ですが、班作業・全体作業で待っているのはものづくりの楽しさです。やっていることは、本番の派手さに比べたら、ひどく地味かもしれませんが、その一つ一つの積み重ねがパイロットを飛ばすと考えると非常にわくわくしますよ！新入生と一緒に活動ができることをWindnauts、そして駆動班で待ってます。</p>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="bg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(images/team/pera.jpg); background-size: cover; opacity: 0.5;"></div>
+                <div class="text">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>プロペラ班</h1>
+                    <p style="size: 20%;">プロペラ班はその名の通りプロペラを作る班です。プロペラは機体の動力源であるパイロットの生み出すパワーを推力に変えるものです。プロペラの魅力といえばその軽さと曲線美！その軽さには感動すること間違いナシです。<br>
+                        新入生でも制作練習用のプロペラにさわることも可能なので、是非説明会などで触れ、その軽さを体感してみてください!!!</p>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="bg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(images/team/souda.jpg); background-size: cover; opacity: 0.5; background-position-y: 25%;"></div>
+                <div class="text">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>操舵班</h1>
+                    <p style="size: 20%;">操舵班はその名の通り，操舵系統の製作を担当している班です．<br>
+                        操舵系統とは飛行機の舵を取る仕組みのことです．具体的には，
+                        ワイヤーリンケージと言って操縦桿を操作すると，機体尾部
+                        へと延びる４本のワイヤーが引っ張られて，尾翼が動きます．<br>
+                        一般的な飛行機は，進行方向軸まわりの回転をロール，
+                        翼幅方向軸まわりの回転をピッチ，上下方向軸まわりの回転をヨーといい，
+                        ロールを主翼のエルロン，ピッチを水平尾翼のエレベーター，ヨーを垂直尾翼のラダー
+                        で制御することにより飛行していますが，Windnautsの機体を含め大半の人力飛行機は
+                        「ラダー機」といってエレベーターとラダーだけで飛行しています．また，人力飛行機の尾翼は
+                        「オールフライング方式」といって，尾翼全体がエレベーターやラダーとして動く構造になっています．<br>
+                        ４本のワイヤーはリアパイプというコクピット後部の桁の後ろを通ってメインビーム（胴体桁）内部へと引き込まれます．
+                        引き込まれたワイヤーはそのままテールビーム（胴体後部桁）の中を通って，それぞれ２本ずつエレベーターとラダーにたどり着きます．
+                        この２本がブーメランと呼ばれる部品を前と後ろで下から引っ張ることで尾翼が回転します．
+                        従って，操舵班の作る部品はコクピット内部の操縦桿にはじまり，尾翼に至るまでワイヤー経路に沿って機体全体に設置されます．<br>
+                        尾翼の動作機構やプーリー（ワイヤーの張力方向を変える滑車）など動く部品が多いので，動く機構に興味のある方は是非操舵班に！</p>
+                </div>
+            </div>
+            <div class="contents">
+            </div>
+            <div class="contents">
+                <div class="bg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(images/slides/avionics-min.jpg); background-size: cover; opacity: 0.5; background-position-y: 25%;"></div>
+                <div class="text">
+                    <!--img src="images/ski.jpg" alt="face" width="40%"--> 
+                    <h1>電装班</h1>
+                    <p style="size: 20%;">電装班は主に飛行中にパイロットが見る計器や、飛行データを収集するための機器を製作する班です。半田ごて片手に部品と格闘したかと思えばパソコンに向き合ってプログラミングをしたりと活動は多岐に渡ります。他の班より大胆な仕様変更が可能で自分のやりたいことをそのまま反映できるのが特徴です!<br>
+                    (あとこのサイト作ってるのも電装班です)</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="fadein.js"></script>
     </body>
 </html>
