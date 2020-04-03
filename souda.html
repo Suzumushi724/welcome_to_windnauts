@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP&display=swap" rel="stylesheet">
+        <title>NEWS</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(window).on('load',function(){
+                $('.loader').css('display','none');
+                $('#main').css('display','block');
+                console.log("done");
+            })
+        </script>
+    </head>
+    <body>
+    <div id="loading" class="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <div id="main" >
+        <div id="omiya" class="newscontents" >
+            <div class="text">
+                <h1>操舵班</h1>
+                <p >操舵班はその名の通り，操舵系統の製作を担当している班です．<br>
+                    操舵系統とは飛行機の舵を取る仕組みのことです．具体的には，
+                    ワイヤーリンケージと言って操縦桿を操作すると，機体尾部
+                    へと延びる４本のワイヤーが引っ張られて，尾翼が動きます．<br>
+                    一般的な飛行機は，進行方向軸まわりの回転をロール，
+                    翼幅方向軸まわりの回転をピッチ，上下方向軸まわりの回転をヨーといい，
+                    ロールを主翼のエルロン，ピッチを水平尾翼のエレベーター，ヨーを垂直尾翼のラダー
+                    で制御することにより飛行していますが，Windnautsの機体を含め大半の人力飛行機は
+                    「ラダー機」といってエレベーターとラダーだけで飛行しています．また，人力飛行機の尾翼は
+                    「オールフライング方式」といって，尾翼全体がエレベーターやラダーとして動く構造になっています．<br>
+                    ４本のワイヤーはリアパイプというコクピット後部の桁の後ろを通ってメインビーム（胴体桁）内部へと引き込まれます．
+                    引き込まれたワイヤーはそのままテールビーム（胴体後部桁）の中を通って，それぞれ２本ずつエレベーターとラダーにたどり着きます．
+                    この２本がブーメランと呼ばれる部品を前と後ろで下から引っ張ることで尾翼が回転します．
+                    従って，操舵班の作る部品はコクピット内部の操縦桿にはじまり，尾翼に至るまでワイヤー経路に沿って機体全体に設置されます．<br>
+                    尾翼の動作機構やプーリー（ワイヤーの張力方向を変える滑車）など動く部品が多いので，動く機構に興味のある方は是非操舵班に！</p>
+            </div>
+        </div>
+        <img src="images/team/souda/fig1.jpg" style="width: 100vw;">
+        <p style="font-size: 150%;">図１：飛行機にはピッチ，ロール，ヨーの３軸がある</p>
+        <img src="images/team/souda/fig2.jpg" style="width: 100vw;">
+        <p style="font-size: 150%;">図２：エレベーター桁とその取り付け部</p>
+        <img src="images/team/souda/fig3.jpg" style="width: 100vw;">
+        <p style="font-size: 150%;">図３：ワイヤーのおおまかな配線経路</p>
+        <img src="images/team/souda/fig4.jpg" style="width: 100vw;">
+        <img src="images/team/souda.jpg" style="width: 100vw;">
+        <p style="font-size: 150%;">図４，５：配線パーツとテールビーム内の様子</p>
+    </div>
+    </body>
+</html>
